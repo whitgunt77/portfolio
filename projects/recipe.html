@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Platform</title>
+  <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Recipe Sharing Platform</h1>
+</header>
+
+<div class="container">
+
+  <a class="back-link" href="../index.html">← Back to Portfolio</a>
+
+  <h2 class="section-title">Overview</h2>
+  <p>
+    A full-stack recipe application built with React and Node. It allows users to create, edit, and delete recipes
+    while browsing community submissions.
+  </p>
+
+  <h2 class="section-title">Key Features</h2>
+  <ul>
+    <li>Responsive UI with an intuitive card-based layout</li>
+    <li>Form validation using Yup</li>
+    <li>CRUD operations using Axios</li>
+    <li>Jest test suites for component validation</li>
+    <li>Deployed on Vercel</li>
+  </ul>
+
+  <h2 class="section-title">Core Code Example</h2>
+  <div class="code-box">
+<pre>
+const handleSubmit = async (values) => {
+  try {
+    await axios.post("/api/recipes", values);
+    alert("Recipe added!");
+  } catch (error) {
+    console.error(error);
+  }
+};
+</pre>
+  </div>
+
+</div>
+</body>
+</html>
