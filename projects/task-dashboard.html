@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Management Dashboard</title>
+  <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Task Management Dashboard</h1>
+</header>
+
+<div class="container">
+
+  <a class="back-link" href="../index.html">← Back to Portfolio</a>
+
+  <h2 class="section-title">Overview</h2>
+  <p>
+    A productivity application with drag-and-drop task organization across multiple workflow columns.
+  </p>
+
+  <h2 class="section-title">Key Features</h2>
+  <ul>
+    <li>Reusable React components</li>
+    <li>React state management for task updates</li>
+    <li>Drag-and-drop functionality</li>
+    <li>User authentication with protected routes</li>
+    <li>Responsive CSS Grid and Flexbox design</li>
+  </ul>
+
+  <h2 class="section-title">Core Code Example</h2>
+  <div class="code-box">
+<pre>
+const moveTask = (taskId, newStatus) => {
+  setTasks(prev =>
+    prev.map(t =>
+      t.id === taskId ? { ...t, status: newStatus } : t
+    )
+  );
+};
+</pre>
+  </div>
+
+</div>
+</body>
+</html>
